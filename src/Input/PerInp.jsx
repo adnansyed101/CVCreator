@@ -4,39 +4,47 @@ const PerInp = () => {
       <fieldset>
         <legend>Personal Information</legend>
         <div className="group">
-          <label htmlFor="fName">Name: </label>
-          <input
-            type="text"
-            name=""
-            placeholder="John Doe"
-            className="input"
-            id="fName"
-          />
-          <label htmlFor="age">Age: </label>
-          <input
-            type="text"
-            name=""
-            placeholder="18"
-            className="input"
-            id="age"
-          />
+          <p className="control">
+            <label htmlFor="fName">Name</label>
+            <input
+              type="text"
+              name=""
+              placeholder="John Doe"
+              className="input"
+              id="fName"
+            />
+          </p>
+          <p className="control">
+            <label htmlFor="age">Age</label>
+            <input
+              type="text"
+              name=""
+              placeholder="18"
+              className="input"
+              id="age"
+            />
+          </p>
         </div>
-        <label htmlFor="email">Email: </label>
-        <input
-          type="email"
-          name=""
-          placeholder="something@something.com"
-          className="input"
-          id="email"
-        />
-        <label htmlFor="phone">Phone: </label>
-        <input
-          type="text"
-          name=""
-          placeholder="0172******"
-          className="input"
-          id="phone"
-        />
+        <p className="control">
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            name=""
+            placeholder="something@something.com"
+            className="input"
+            id="email"
+          />
+        </p>
+        <p className="control">
+          <label htmlFor="phone">Phone</label>
+          <input
+            type="text"
+            name=""
+            placeholder="0172*******"
+            className="input"
+            id="phone"
+          />
+        </p>
       </fieldset>
     </div>
   );
