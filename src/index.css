@@ -4,7 +4,8 @@
   --primary-color: #ff9d01;
   --secondary-color: #2a2a2c;
   --third-color: #ffdd99;
-  --primary-text-color: #2d2d2b;
+  --primary-text-color: #EDFDEF;
+  --secondary-text-color: #2d2d2b;
 }
 
 * {
@@ -26,7 +27,7 @@ body {
 .form {
   margin-top: 10px;
   box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.1);
-  background-color: white;
+  background-color: var(--primary-text-color);
   padding: 5px 30px;
 }
 
@@ -61,7 +62,7 @@ input {
   font-size: 1.2rem;
   padding: 0 5px;
   border: 1px solid var(--secondary-color);
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
 }
 
 .control {
