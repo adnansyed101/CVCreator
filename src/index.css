@@ -18,24 +18,48 @@ body {
 
 .form {
   margin-top: 10px;
-  display: flex;
-  flex-direction: column;
+  box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 5px 30px;
 }
 
 .form > h1 {
   text-align: center;
 }
 
+fieldset {
+  padding: 5px;
+}
+
+legend {
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 0 10px;
+}
+
 label {
   font-size: 1.2rem;
+  width: 80px;
+  padding-left: 4px;
+  text-align: left;
 }
 
 input {
-  display: block;
-  width: 40%;
-  padding: 2px;
+  width: 90%;
+  font-size: 1.2rem;
+  padding: 0 5px;
+}
+
+.control {
+  display: flex;
+  margin: 10px 0;
 }
 
 .group {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.group > .control > input {
+  width: 80%;
 }
