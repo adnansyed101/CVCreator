@@ -4,7 +4,7 @@
   --primary-color: #ff9d01;
   --secondary-color: #2a2a2c;
   --third-color: #ffdd99;
-  --primary-text-color: #EDFDEF;
+  --primary-text-color: #edfdef;
   --secondary-text-color: #2d2d2b;
 }
 
@@ -50,7 +50,7 @@ legend {
 
 label {
   font-size: 1.2rem;
-  width: 80px;
+  width: 100px;
   padding-left: 4px;
   text-align: left;
   color: var(--secondary-color);
@@ -77,4 +77,8 @@ input {
 
 .group > .control > input {
   width: 80%;
+}
+
+textarea {
+  width: 90%;
 }
