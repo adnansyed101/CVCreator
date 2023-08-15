@@ -51,7 +51,7 @@ const EduInp = () => {
         </div>
         <p className="control">
           <label htmlFor="eduDesc">Describe</label>
-          <textarea name="eduDesc" id="EduDesc" />
+          <textarea name="eduDesc" id="EduDesc" placeholder="Give description of course."/>
         </p>
         <button type="button" className="addBtn">
           Add Education
