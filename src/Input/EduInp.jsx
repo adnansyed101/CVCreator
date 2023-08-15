@@ -53,8 +53,15 @@ const EduInp = () => {
         </div>
         <p className="control">
           <label htmlFor="eduDesc">Describe</label>
-          <textarea name="eduDesc" id="EduDesc"  />
+          <textarea name="eduDesc" id="EduDesc" />
         </p>
+        <button type="button" className="addBtn">
+          Add Education
+        </button>
+        <button type="button" className="removeBtn">
+          Remove Education
+        </button>
+        <hr />
       </fieldset>
     </div>
   );
