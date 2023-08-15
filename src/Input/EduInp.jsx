@@ -8,7 +8,7 @@ const EduInp = () => {
             <label htmlFor="eduStart">Start</label>
             <input
               type="date"
-              // name="personalName"
+              name="eduStart"
               className="input"
               id="eduStart"
               // onChange={handleChange}
@@ -31,20 +31,20 @@ const EduInp = () => {
             <label htmlFor="eduEnd">End</label>
             <input
               type="date"
-              // name="personalName"
+              name="eduEnd"
               className="input"
               id="eduStart"
               // onChange={handleChange}
             />
           </p>
           <p className="control">
-            <label htmlFor="age">Title</label>
+            <label htmlFor="eduTitle">Title</label>
             <input
               type="text"
               name="eduTitle"
               placeholder="BBA"
               className="input"
-              id="age"
+              id="eduTitle"
               // onChange={handleChange}
             />
           </p>
