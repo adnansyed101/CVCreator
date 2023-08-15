@@ -9,7 +9,6 @@ const EduInp = () => {
             <input
               type="date"
               // name="personalName"
-              // placeholder="John Doe"
               className="input"
               id="eduStart"
               // onChange={handleChange}
@@ -33,7 +32,6 @@ const EduInp = () => {
             <input
               type="date"
               // name="personalName"
-              // placeholder="John Doe"
               className="input"
               id="eduStart"
               // onChange={handleChange}
