@@ -29,6 +29,7 @@ body {
   box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.1);
   background-color: var(--primary-text-color);
   padding: 5px 30px;
+  padding-bottom: 2rem;
 }
 
 .form > h1 {
