@@ -1,5 +1,8 @@
 /* eslint-disable react/prop-types */
-const PerInp = ({ handleChange }) => {
+const PerInp = ({ handleChange, personalInfo }) => {
+
+  const {personalName, age, email, phone } = personalInfo
+
   return (
     <div className="perInf">
       <fieldset>
@@ -14,6 +17,7 @@ const PerInp = ({ handleChange }) => {
               className="input"
               id="fName"
               onChange={handleChange}
+              value={personalName}
             />
           </p>
           <p className="control">
@@ -25,6 +29,7 @@ const PerInp = ({ handleChange }) => {
               className="input"
               id="age"
               onChange={handleChange}
+              value={age}
             />
           </p>
         </div>
@@ -37,6 +42,7 @@ const PerInp = ({ handleChange }) => {
             className="input"
             id="email"
             onChange={handleChange}
+            value={email}
           />
         </p>
         <p className="control">
@@ -48,6 +54,7 @@ const PerInp = ({ handleChange }) => {
             className="input"
             id="phone"
             onChange={handleChange}
+            value={phone}
           />
         </p>
       </fieldset>
