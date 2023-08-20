@@ -87,7 +87,7 @@ const EduInp = ({ education, setEducation }) => {
                 <label htmlFor="eduDesc">Describe</label>
                 <textarea
                   name="eduDesc"
-                  id="EduDesc"
+                  id="eduDesc"
                   placeholder="Give description of course."
                   onChange={(e) => handleChange(e, index)}
                   value={data.eduDesc}
