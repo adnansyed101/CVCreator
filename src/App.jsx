@@ -21,6 +21,16 @@ function App() {
     },
   ]);
 
+  const [job, setJob] = useState([
+    {
+      jobStart: "",
+      jobInstitute: "",
+      jobEnd: "",
+      jobTitle: "",
+      jobDesc: "",
+    },
+  ]);
+
   const handlePersonalChange = (e) => {
     setPersonal((prev) => {
       return {
@@ -37,7 +47,7 @@ function App() {
         <form>
           <PerInp personalInfo={personal} handleChange={handlePersonalChange} />
           <EduInp education={education} setEducation={setEducation} />
-          <JobInp />
+          <JobInp job={job} setJob={setJob} />
         </form>
       </div>
     </div>
