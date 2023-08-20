@@ -1,4 +1,31 @@
-const EduInp = () => {
+const EduInp = ({ education, setEducation }) => {
+  
+  const handleChange = (e, index) => {
+    const { name, value } = e.target;
+    const list = [...education];
+    list[index][name] = value;
+    setEducation(list);
+  };
+
+  const handleAddEducation = () => {
+    setEducation([
+      ...education,
+      {
+        institute: "",
+        degreeName: "",
+        startDate: "",
+        endDate: "",
+        description: "",
+      },
+    ]);
+  };
+
+  const handleEducationRemove = (index) => {
+    const list = [...education];
+    list.splice(index, 1);
+    setEducation(list);
+  };
+
   return (
     <div className="eduInf">
       <fieldset>
@@ -11,7 +38,7 @@ const EduInp = () => {
               name="eduStart"
               className="input"
               id="eduStart"
-              // onChange={handleChange}
+              onChange={handleChange}
             />
           </p>
           <p className="control">
@@ -22,7 +49,7 @@ const EduInp = () => {
               placeholder="BRAC University"
               className="input"
               id="age"
-              // onChange={handleChange}
+              onChange={handleChange}
             />
           </p>
         </div>
@@ -34,7 +61,7 @@ const EduInp = () => {
               name="eduEnd"
               className="input"
               id="eduStart"
-              // onChange={handleChange}
+              onChange={handleChange}
             />
           </p>
           <p className="control">
@@ -45,13 +72,17 @@ const EduInp = () => {
               placeholder="BBA"
               className="input"
               id="eduTitle"
-              // onChange={handleChange}
+              onChange={handleChange}
             />
           </p>
         </div>
         <p className="control">
           <label htmlFor="eduDesc">Describe</label>
-          <textarea name="eduDesc" id="EduDesc" placeholder="Give description of course."/>
+          <textarea
+            name="eduDesc"
+            id="EduDesc"
+            placeholder="Give description of course."
+          />
         </p>
         <button type="button" className="addBtn">
           Add Education
