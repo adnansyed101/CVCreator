@@ -67,6 +67,14 @@ textarea {
   color: var(--secondary-text-color);
 }
 
+input[type="file"] {
+  display: none;
+}
+
+.customInput {
+  width: auto;
+}
+
 .control {
   display: flex;
   margin: 10px 0;
@@ -82,7 +90,8 @@ textarea {
 }
 
 .addBtn,
-.removeBtn {
+.removeBtn,
+.customInput {
   outline: none;
   padding: 5px 10px;
   margin: 5px;
@@ -90,15 +99,18 @@ textarea {
   font-size: 1rem;
   border: none;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .addBtn:hover,
-.removeBtn:hover {
+.removeBtn:hover,
+.customInput:hover {
   transform: scale(1.05);
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.addBtn {
+.addBtn,
+.customInput {
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
