@@ -1,9 +1,35 @@
 /* eslint-disable react/prop-types */
 const JobInp = ({ job, setJob }) => {
+  const handleChange = (e, index) => {
+    const { name, value } = e.target;
+    const list = [...job];
+    list[index][name] = value;
+    setJob(list);
+  };
+
+  const addJob = () => {
+    setJob([
+      ...job,
+      {
+        jobStart: "",
+        jobInstitute: "",
+        jobEnd: "",
+        jobTitle: "",
+        jobDesc: "",
+      },
+    ]);
+  };
+
+  const removeJob = (index) => {
+    const list = [...job];
+    list.splice(index, 1);
+    setJob(list);
+  };
+
   return (
     <div className="eduInf">
       <fieldset>
-        <legend>Educational Information</legend>
+        <legend>Job Information</legend>
         {job.map((data, index) => {
           return (
             <div key={index}>
@@ -68,17 +94,17 @@ const JobInp = ({ job, setJob }) => {
                 />
               </p>
               {job.length - 1 === index && (
-                <button type="button" className="addBtn" onClick={addEducation}>
-                  Add Education
+                <button type="button" className="addBtn" onClick={addJob}>
+                  Add Job
                 </button>
               )}
               {job.length !== 1 && (
                 <button
                   type="button"
                   className="removeBtn"
-                  onClick={() => removeEducation(index)}
+                  onClick={() => removeJob(index)}
                 >
-                  Remove Education
+                  Remove Job
                 </button>
               )}
               <hr />
