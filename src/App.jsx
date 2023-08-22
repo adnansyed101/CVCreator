@@ -9,6 +9,7 @@ function App() {
     age: "",
     email: "",
     phone: "",
+    title: "",
   });
 
   const [personImg, setPersonImg] = useState();
@@ -60,6 +61,7 @@ function App() {
           <JobInp job={job} setJob={setJob} />
         </form>
       </div>
+      <div className="CV"></div>
     </div>
   );
 }
