@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 const PerInp = ({ personalInfo, handleChange, handleImgChange }) => {
-  const { personalName, age, email, phone } = personalInfo;
+  const { personalName, age, email, phone, title } = personalInfo;
 
   return (
     <div className="perInf">
@@ -54,6 +54,18 @@ const PerInp = ({ personalInfo, handleChange, handleImgChange }) => {
             id="phone"
             onChange={handleChange}
             value={phone}
+          />
+        </p>
+        <p className="control">
+          <label htmlFor="title">Title</label>
+          <input
+            type="text"
+            name="title"
+            placeholder="Senior Web Developer"
+            className="input"
+            id="title"
+            onChange={handleChange}
+            value={title}
           />
         </p>
         <p className="control">
