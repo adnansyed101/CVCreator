@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
-const PerInp = ({ handleChange, personalInfo }) => {
-
-  const {personalName, age, email, phone } = personalInfo
+const PerInp = ({ personalInfo, handleChange, handleImgChange }) => {
+  const { personalName, age, email, phone } = personalInfo;
 
   return (
     <div className="perInf">
@@ -56,6 +55,17 @@ const PerInp = ({ handleChange, personalInfo }) => {
             onChange={handleChange}
             value={phone}
           />
+        </p>
+        <p className="control">
+          <label htmlFor="personImg" className="customInput">
+            Choose Image
+            <input
+              type="file"
+              id="personImg"
+              onChange={handleImgChange}
+              placeholder="Add Image"
+            />
+          </label>
         </p>
       </fieldset>
     </div>
