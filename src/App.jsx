@@ -11,6 +11,8 @@ function App() {
     phone: "",
   });
 
+  const [personImg, setPersonImg] = useState();
+
   const [education, setEducation] = useState([
     {
       eduStart: "",
@@ -40,12 +42,20 @@ function App() {
     });
   };
 
+  const handleImgChange = (e) => {
+    setPersonImg(URL.createObjectURL(e.target.files[0]));
+  };
+
   return (
     <div className="App">
       <div className="form">
         <h1>CV Form</h1>
         <form>
-          <PerInp personalInfo={personal} handleChange={handlePersonalChange} />
+          <PerInp
+            personalInfo={personal}
+            handleChange={handlePersonalChange}
+            handleImgChange={handleImgChange}
+          />
           <EduInp education={education} setEducation={setEducation} />
           <JobInp job={job} setJob={setJob} />
         </form>
