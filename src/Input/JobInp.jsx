@@ -50,7 +50,7 @@ const JobInp = ({ job, setJob }) => {
                   <input
                     type="text"
                     name="jobInstitute"
-                    placeholder="BRAC University"
+                    placeholder="ABC Company"
                     className="input"
                     id="jobInstitute"
                     onChange={(e) => handleChange(e, index)}
@@ -75,7 +75,7 @@ const JobInp = ({ job, setJob }) => {
                   <input
                     type="text"
                     name="jobTitle"
-                    placeholder="BBA"
+                    placeholder="Senior Developer"
                     className="input"
                     id="jobTitle"
                     onChange={(e) => handleChange(e, index)}
@@ -88,7 +88,7 @@ const JobInp = ({ job, setJob }) => {
                 <textarea
                   name="jobDesc"
                   id="jobDesc"
-                  placeholder="Give description of course."
+                  placeholder="Give description of Job."
                   onChange={(e) => handleChange(e, index)}
                   value={data.jobDesc}
                 />
