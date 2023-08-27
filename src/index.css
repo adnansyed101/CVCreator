@@ -119,3 +119,56 @@ input[type="file"] {
   background-color: #2a2a2c;
   color: var(--primary-color);
 }
+
+.CV {
+  margin: 20px 0;
+}
+
+.CV > h1 {
+  text-align: center;
+}
+
+.CVoutput {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.1);
+  background-color: var(--primary-text-color);
+}
+
+.rightSection,
+.leftSection {
+  padding: 50px 0;
+}
+
+.rightSection {
+  background-color: var(--secondary-text-color);
+}
+
+.rightSection img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 100%;
+  background-color: var(--secondary-text-color);
+  padding: 10px;
+}
+
+.imgDiv {
+  background-color: var(--primary-color);
+  height: 300px;
+}
+
+.header {
+  height: 300px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: auto;
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+  border-radius: 20px 0 0 20px;
+  letter-spacing: 3px;
+  font-size: x-large;
+}
