@@ -6,13 +6,13 @@ import { useState } from "react";
 function App() {
   const [personal, setPersonal] = useState({
     personalName: "",
-    age: "",
+    address: "",
     email: "",
     phone: "",
     title: "",
   });
 
-  const [personImg, setPersonImg] = useState();
+  const [personImg, setPersonImg] = useState("");
 
   const [education, setEducation] = useState([
     {
