@@ -19,19 +19,6 @@ const PerInp = ({ personalInfo, handleChange, handleImgChange }) => {
               value={personalName}
             />
           </p>
-          <p className="control">
-            <label htmlFor="address">Address</label>
-            <input
-              type="text"
-              name="address"
-              placeholder="Mohammadpur Dhaka"
-              className="input"
-              id="address"
-              onChange={handleChange}
-              value={address}
-            />
-          </p>
-        </div>
         <p className="control">
           <label htmlFor="email">Email</label>
           <input
@@ -44,6 +31,19 @@ const PerInp = ({ personalInfo, handleChange, handleImgChange }) => {
             value={email}
           />
         </p>
+        </div>
+          <p className="control">
+            <label htmlFor="address">Address</label>
+            <input
+              type="text"
+              name="address"
+              placeholder="Mohammadpur Dhaka"
+              className="input"
+              id="address"
+              onChange={handleChange}
+              value={address}
+            />
+          </p>
         <p className="control">
           <label htmlFor="phone">Phone</label>
           <input
