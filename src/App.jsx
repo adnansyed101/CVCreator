@@ -2,6 +2,7 @@ import PerInp from "./Input/PerInp";
 import EduInp from "./Input/EduInp";
 import JobInp from "./Input/JobInp";
 import { useState } from "react";
+import Header from "./Ouput/Header";
 
 function App() {
   const [personal, setPersonal] = useState({
@@ -12,7 +13,7 @@ function App() {
     title: "",
   });
 
-  const [personImg, setPersonImg] = useState("");
+  const [personImg, setPersonImg] = useState("/placeholder.jpeg");
 
   const [education, setEducation] = useState([
     {
@@ -61,7 +62,12 @@ function App() {
           <JobInp job={job} setJob={setJob} />
         </form>
       </div>
-      <div className="CV"></div>
+      <div className="CV">
+        <h1>CV</h1>
+        <div className="CVoutput">
+          <Header {...personal} personImg={personImg} />
+        </div>
+      </div>
     </div>
   );
 }
