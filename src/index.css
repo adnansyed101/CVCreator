@@ -129,10 +129,9 @@ input[type="file"] {
 }
 
 .CVoutput {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
   box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.1);
   background-color: var(--primary-text-color);
+  padding: 20px 0;
 }
 
 .rightSection,
@@ -144,31 +143,25 @@ input[type="file"] {
   background-color: var(--secondary-text-color);
 }
 
-.rightSection img {
-  width: 300px;
-  height: 300px;
+.header {
+  display: flex;
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+  width: 70%;
+  margin: 0 auto;
+  height: 270px;
+  border-radius: 5px 50% 5px 50%;
+  align-items: center;
+  gap: 50px;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+}
+
+.header img {
+  width: 250px;
   object-fit: cover;
   border-radius: 100%;
   background-color: var(--secondary-text-color);
-  padding: 10px;
-}
-
-.imgDiv {
-  background-color: var(--primary-color);
-  height: 300px;
-}
-
-.header {
-  height: 300px;
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-left: auto;
-  background-color: var(--primary-color);
-  color: var(--primary-text-color);
-  border-radius: 20px 0 0 20px;
-  letter-spacing: 3px;
-  font-size: x-large;
+  padding: 5px;
+  margin-left: 40px;
 }
