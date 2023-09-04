@@ -131,12 +131,11 @@ input[type="file"] {
 .CVoutput {
   box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.1);
   background-color: var(--primary-text-color);
-  width: 80%;
   padding: 20px 0;
   position: relative;
   display: grid;
   grid-template-columns: 3fr 2fr;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: 350px 1fr;
   min-height: 1000px;
   margin: 0 auto;
 }
@@ -174,4 +173,43 @@ input[type="file"] {
   top: 0;
   right: 0;
   padding-top: 20rem;
+}
+
+.leftHeader {
+  background-color: var(--primary-color);
+  width: 90%;
+  padding: 5px 30px;
+  letter-spacing: 3px;
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--secondary-text-color);
+}
+
+.out {
+  padding: 0 20px 0 40px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  gap: 30px;
+  color: var(--secondary-color);
+  font-size: large;
+}
+
+.block {
+  height: 25px;
+  width: 25px;
+  background-color: var(--primary-color);
+}
+
+.insYear {
+  width: 30%;
+}
+
+.titleDesc {
+  width: 70%;
+}
+
+.titleDesc > p {
+  font-size: .9rem;
 }
