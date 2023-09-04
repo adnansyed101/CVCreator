@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const Header = ({ personImg, personalName, title }) => {
   return (
     <div className="header">
