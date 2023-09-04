@@ -3,6 +3,8 @@ import EduInp from "./Input/EduInp";
 import JobInp from "./Input/JobInp";
 import { useState } from "react";
 import Header from "./Ouput/Header";
+import LeftSection from "./Ouput/LeftSection";
+import RightSection from "./Ouput/RightSection";
 
 function App() {
   const [personal, setPersonal] = useState({
@@ -17,9 +19,9 @@ function App() {
 
   const [education, setEducation] = useState([
     {
-      eduStart: "",
+      eduStart: new Date(),
       eduInstitute: "",
-      eduEnd: "",
+      eduEnd: new Date(),
       eduTitle: "",
       eduDesc: "",
     },
@@ -27,9 +29,9 @@ function App() {
 
   const [job, setJob] = useState([
     {
-      jobStart: "",
+      jobStart: new Date(),
       jobInstitute: "",
-      jobEnd: "",
+      jobEnd: new Date(),
       jobTitle: "",
       jobDesc: "",
     },
@@ -66,6 +68,8 @@ function App() {
         <h1>CV</h1>
         <div className="CVoutput">
           <Header {...personal} personImg={personImg} />
+          <LeftSection education={education} job={job} />
+          <RightSection />
         </div>
       </div>
     </div>
