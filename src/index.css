@@ -136,8 +136,9 @@ input[type="file"] {
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-template-rows: 350px 1fr;
-  min-height: 1000px;
+  min-height: 1200px;
   margin: 0 auto;
+  width: 80%;
 }
 
 .header {
