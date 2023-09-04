@@ -11,9 +11,9 @@ const JobInp = ({ job, setJob }) => {
     setJob([
       ...job,
       {
-        jobStart: "",
+        jobStart: new Date(),
         jobInstitute: "",
-        jobEnd: "",
+        jobEnd: new Date(),
         jobTitle: "",
         jobDesc: "",
       },
