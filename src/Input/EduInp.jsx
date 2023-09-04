@@ -11,9 +11,9 @@ const EduInp = ({ education, setEducation }) => {
     setEducation([
       ...education,
       {
-        eduStart: "",
+        eduStart: new Date(),
         eduInstitute: "",
-        eduEnd: "",
+        eduEnd: new Date(),
         eduTitle: "",
         eduDesc: "",
       },
