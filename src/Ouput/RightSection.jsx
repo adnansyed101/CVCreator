@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import { FaLocationArrow } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { BsFillPhoneFill } from "react-icons/bs";
 
-const RightSection = () => {
+const RightSection = ({ address, email, phone }) => {
   return (
     <div className="rightSection">
       <h1>Contact Me</h1>
@@ -10,24 +11,21 @@ const RightSection = () => {
         <FaLocationArrow style={{ fontSize: "2rem", color: "#ff9d01" }} />
         <div className="rightInfo">
           <h4>Address</h4>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi,
-            quae!
-          </p>
+          <p>{address ? address : "123, Street Oclaho, New York City, USA"}</p>
         </div>
       </div>
       <div className="rightSubInfo">
         <MdEmail style={{ fontSize: "2rem", color: "#ff9d01" }} />
         <div className="rightInfo">
           <h4>Email</h4>
-          <p>something@something.com</p>
+          <p>{email ? email : "johnDoe123@placeholder.com"}</p>
         </div>
       </div>
       <div className="rightSubInfo">
         <BsFillPhoneFill style={{ fontSize: "2rem", color: "#ff9d01" }} />
         <div className="rightInfo">
           <h4>Phone</h4>
-          <p>01725290448</p>
+          <p>{phone ? phone : "01700000000"}</p>
         </div>
       </div>
     </div>
