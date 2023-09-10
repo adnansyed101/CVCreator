@@ -6,6 +6,7 @@ import { useState } from "react";
 import Header from "./Ouput/Header";
 import LeftSection from "./Ouput/LeftSection";
 import RightSection from "./Ouput/RightSection";
+import SkillInp from "./Input/SkillInp";
 
 function App() {
   const [personal, setPersonal] = useState({
@@ -38,6 +39,13 @@ function App() {
     },
   ]);
 
+  const [skills, setSkills] = useState([
+    {
+      skill: "",
+      progress: "",
+    },
+  ]);
+
   const handlePersonalChange = (e) => {
     setPersonal((prev) => {
       return {
@@ -63,6 +71,7 @@ function App() {
           />
           <EduInp education={education} setEducation={setEducation} />
           <JobInp job={job} setJob={setJob} />
+          <SkillInp skills={skills} setSkills={setSkills} />
         </form>
       </div>
       <div className="CV">
