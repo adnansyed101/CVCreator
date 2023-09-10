@@ -1,4 +1,5 @@
-/* eslint-disable react/prop-types */
+import PropTypes from "prop-types";
+
 const JobInp = ({ job, setJob }) => {
   const handleChange = (e, index) => {
     const { name, value } = e.target;
@@ -114,6 +115,11 @@ const JobInp = ({ job, setJob }) => {
       </fieldset>
     </div>
   );
+};
+
+JobInp.propTypes = {
+  job: PropTypes.array,
+  setJob: PropTypes.func,
 };
 
 export default JobInp;
