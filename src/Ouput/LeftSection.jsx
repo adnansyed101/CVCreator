@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from "prop-types";
 import EduOut from "./EduOut";
 import JobOut from "./JobOut";
 
@@ -19,6 +19,11 @@ const LeftSection = ({ education, job }) => {
       <div style={{ marginBottom: "5rem" }}>{jobOutElement}</div>
     </div>
   );
+};
+
+LeftSection.propTypes = {
+  education: PropTypes.array,
+  job: PropTypes.array,
 };
 
 export default LeftSection;

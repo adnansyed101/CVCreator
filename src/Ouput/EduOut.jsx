@@ -1,6 +1,6 @@
 import { getYear } from "date-fns";
+import PropTypes from "prop-types";
 
-/* eslint-disable react/prop-types */
 const EduOut = ({ eduStart, eduInstitute, eduEnd, eduTitle, eduDesc }) => {
   return (
     <div className="out">
@@ -17,6 +17,14 @@ const EduOut = ({ eduStart, eduInstitute, eduEnd, eduTitle, eduDesc }) => {
       </div>
     </div>
   );
+};
+
+EduOut.propTypes = {
+  eduStart: PropTypes.string,
+  eduInstitute: PropTypes.string,
+  eduEnd: PropTypes.string,
+  eduTitle: PropTypes.string,
+  eduDesc: PropTypes.string,
 };
 
 export default EduOut;

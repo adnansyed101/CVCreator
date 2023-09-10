@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from "prop-types";
 import { FaLocationArrow } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { BsFillPhoneFill } from "react-icons/bs";
@@ -30,6 +30,12 @@ const RightSection = ({ address, email, phone }) => {
       </div>
     </div>
   );
+};
+
+RightSection.propTypes = {
+  address: PropTypes.string,
+  email: PropTypes.string,
+  phone: PropTypes.string,
 };
 
 export default RightSection;

@@ -1,6 +1,6 @@
 import { getYear } from "date-fns";
+import PropTypes from "prop-types";
 
-/* eslint-disable react/prop-types */
 const JobOut = ({ jobStart, jobInstitute, jobEnd, jobTitle, jobDesc }) => {
   return (
     <div className="out">
@@ -17,6 +17,14 @@ const JobOut = ({ jobStart, jobInstitute, jobEnd, jobTitle, jobDesc }) => {
       </div>
     </div>
   );
+};
+
+JobOut.propTypes = {
+  jobStart: PropTypes.string,
+  jobInstitute: PropTypes.string,
+  jobEnd: PropTypes.string,
+  jobTitle: PropTypes.string,
+  jobDesc: PropTypes.string,
 };
 
 export default JobOut;
