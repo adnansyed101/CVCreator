@@ -1,3 +1,4 @@
+import { format } from "date-fns";
 import PropTypes from "prop-types";
 
 const JobInp = ({ job, setJob }) => {
@@ -12,9 +13,9 @@ const JobInp = ({ job, setJob }) => {
     setJob([
       ...job,
       {
-        jobStart: new Date(),
+        jobStart: format(new Date(), "yyyy-MM-dd"),
         jobInstitute: "",
-        jobEnd: new Date(),
+        jobEnd: format(new Date(), "yyyy-MM-dd"),
         jobTitle: "",
         jobDesc: "",
       },

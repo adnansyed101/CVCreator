@@ -1,3 +1,4 @@
+import { format } from "date-fns";
 import PropTypes from "prop-types";
 
 const EduInp = ({ education, setEducation }) => {
@@ -12,9 +13,9 @@ const EduInp = ({ education, setEducation }) => {
     setEducation([
       ...education,
       {
-        eduStart: new Date(),
+        eduStart: format(new Date(), "yyyy-MM-dd"),
         eduInstitute: "",
-        eduEnd: new Date(),
+        eduEnd: format(new Date(), "yyyy-MM-dd"),
         eduTitle: "",
         eduDesc: "",
       },

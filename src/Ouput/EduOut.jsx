@@ -1,3 +1,5 @@
+import { getYear } from "date-fns";
+
 /* eslint-disable react/prop-types */
 const EduOut = ({ eduStart, eduInstitute, eduEnd, eduTitle, eduDesc }) => {
   return (
@@ -5,7 +7,7 @@ const EduOut = ({ eduStart, eduInstitute, eduEnd, eduTitle, eduDesc }) => {
       <div className="block"></div>
       <div className="insYear">
         <span>
-          {new Date(eduStart).getFullYear()} - {new Date(eduEnd).getFullYear()}
+          {getYear(new Date(eduStart))} - {getYear(new Date(eduEnd))}
         </span>
         <p>{eduInstitute ? eduInstitute : "ABC Institute"}</p>
       </div>

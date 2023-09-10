@@ -1,3 +1,4 @@
+import { format } from "date-fns";
 import PerInp from "./Input/PerInp";
 import EduInp from "./Input/EduInp";
 import JobInp from "./Input/JobInp";
@@ -19,9 +20,9 @@ function App() {
 
   const [education, setEducation] = useState([
     {
-      eduStart: new Date(),
+      eduStart: format(new Date(), "yyyy-MM-dd"),
       eduInstitute: "",
-      eduEnd: new Date(),
+      eduEnd: format(new Date(), "yyyy-MM-dd"),
       eduTitle: "",
       eduDesc: "",
     },
@@ -29,9 +30,9 @@ function App() {
 
   const [job, setJob] = useState([
     {
-      jobStart: new Date(),
+      jobStart: format(new Date(), "yyyy-MM-dd"),
       jobInstitute: "",
-      jobEnd: new Date(),
+      jobEnd: format(new Date(), "yyyy-MM-dd"),
       jobTitle: "",
       jobDesc: "",
     },
