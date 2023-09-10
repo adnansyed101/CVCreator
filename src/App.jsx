@@ -3,10 +3,8 @@ import PerInp from "./Input/PerInp";
 import EduInp from "./Input/EduInp";
 import JobInp from "./Input/JobInp";
 import { useState } from "react";
-import Header from "./Ouput/Header";
-import LeftSection from "./Ouput/LeftSection";
-import RightSection from "./Ouput/RightSection";
 import SkillInp from "./Input/SkillInp";
+import CVOutput from "./Ouput/CVOutput";
 
 function App() {
   const [personal, setPersonal] = useState({
@@ -74,14 +72,13 @@ function App() {
           <SkillInp skills={skills} setSkills={setSkills} />
         </form>
       </div>
-      <div className="CV">
-        <h1>CV</h1>
-        <div className="CVoutput">
-          <Header {...personal} personImg={personImg} />
-          <LeftSection education={education} job={job} />
-          <RightSection {...personal} skills={skills}/>
-        </div>
-      </div>
+      <CVOutput
+        personal={personal}
+        personImg={personImg}
+        education={education}
+        job={job}
+        skills={skills}
+      />
     </div>
   );
 }
