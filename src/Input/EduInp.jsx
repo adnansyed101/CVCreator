@@ -1,4 +1,5 @@
-/* eslint-disable react/prop-types */
+import PropTypes from "prop-types";
+
 const EduInp = ({ education, setEducation }) => {
   const handleChange = (e, index) => {
     const { name, value } = e.target;
@@ -114,6 +115,11 @@ const EduInp = ({ education, setEducation }) => {
       </fieldset>
     </div>
   );
+};
+
+EduInp.propTypes = {
+  education: PropTypes.array,
+  setEducation: PropTypes.func
 };
 
 export default EduInp;
