@@ -239,3 +239,17 @@ input[type="file"] {
 .rightInfo > p {
   font-size: 0.9rem;
 }
+
+.skills > h3 {
+  text-align: center;
+}
+
+.skillProgress {
+  width: 100%;
+  border: 2px solid var(--primary-color);
+}
+
+.bar {
+  height: 30px;
+  background-color: var(--primary-color);
+}
