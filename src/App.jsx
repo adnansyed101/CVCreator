@@ -79,7 +79,7 @@ function App() {
         <div className="CVoutput">
           <Header {...personal} personImg={personImg} />
           <LeftSection education={education} job={job} />
-          <RightSection {...personal} />
+          <RightSection {...personal} skills={skills}/>
         </div>
       </div>
     </div>
